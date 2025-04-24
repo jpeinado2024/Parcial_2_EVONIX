@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EVONIX.COM.CO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="text-center my-3">EVONIX</h1>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EVONIX</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Sobre Nosotros 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo1" onclick="mostrarSeccion('mision')">Misión</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo1" onclick="mostrarSeccion('vision')">Visión</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Políticas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start" id="demo1">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Bienvenidos a nuestra empresa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>En EVONIX, nos dedicamos a ofrecer soluciones tecnológicas innovadoras y de alta calidad.</p>
+        <p>Contamos con una amplia gama de servicios, desde desarrollo de software hasta consultoría tecnológica.</p>
+
+        <!-- Botón Misión -->
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMision" aria-expanded="false">
+            Misión
+          </button>
+        </p>
+        <div class="collapse collapse-horizontal" id="collapseMision">
+          <div class="card card-body" style="width: 300px;">
+            La misión de EVONIX es proporcionar soluciones tecnológicas innovadoras y de alta calidad que impulsen el crecimiento y la eficiencia de nuestros clientes, a través de un enfoque centrado en el cliente y un compromiso con la excelencia.
+          </div>
+        </div>
+
+        <!-- Botón Visión -->
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVision" aria-expanded="false">
+            Visión
+          </button>
+        </p>
+        <div class="collapse collapse-horizontal" id="collapseVision">
+          <div class="card card-body" style="width: 300px;">
+            La visión de EVONIX es ser reconocidos como líderes en la industria de la tecnología, ofreciendo soluciones innovadoras y sostenibles que transformen la forma en que las empresas operan y se conectan con sus clientes.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.jpg" alt="Tecnología" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" alt="Innovación" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" alt="Futuro" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- VIDEO MODAL -->
+    <div class="container mt-3">
+      <h3>Video Informativo</h3>
+      <p>Haz click para conocer sobre nuestra empresa y nuestro trabajo.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Video Informativo
+      </button>
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Bienvenido a EVONIX, la mejor tecnología</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <video src="video/129370-744370496_tiny.mp4" controls style="width: 100%;"></video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL PDF -->
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Bienvenido al portafolio de Nexentech</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <a href="pdf/Rúbrica de evaluación - Fase 2 - Responsabilidad social y digital a partir de las IA (1).pdf" target="_blank" class="btn btn-primary">Ver PDF</a>
+            <iframe src="pdf/Rúbrica de evaluación - Fase 2 - Responsabilidad social y digital a partir de las IA (1).pdf" frameborder="0" width="100%" height="400px"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <h3>PDF de Vistas</h3>
+      <p>Haz click para ver el PDF de lo que podemos hacer por tu empresa.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Ver PDF</button>
+    </div>
+
+    <!-- TEXTO FINAL -->
+    <div class="container mt-4">
+      <p>
+        EVONIX es una empresa dedicada al desarrollo tecnológico, comprometida en brindar una excelente experiencia a nuestros clientes y ofrecer siempre el mejor servicio.
+      </p>
+    </div>
+
+    <!-- BOTÓN DE ACCESO AL OFFCANVAS -->
+    <div class="container-fluid mt-3">
+      <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+        Información Offcanvas
+      </button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function mostrarSeccion(seccion) {
+        const mision = document.getElementById('collapseMision');
+        const vision = document.getElementById('collapseVision');
+        if (mision.classList.contains('show')) new bootstrap.Collapse(mision).hide();
+        if (vision.classList.contains('show')) new bootstrap.Collapse(vision).hide();
+        if (seccion === 'mision') {
+          new bootstrap.Collapse(mision).show();
+        } else if (seccion === 'vision') {
+          new bootstrap.Collapse(vision).show();
+        }
+      }
+    </script>
+  </body>
+</html>
